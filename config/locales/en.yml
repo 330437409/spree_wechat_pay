@@ -1,0 +1,25 @@
+---
+en:
+  spree:
+    wechat_pay:
+      errors:
+        api_v3_key_rejected: WeChat Pay answered, but the answer could not be read with this APIv3 key (%{message}). Check the key in the merchant platform — it is 32 characters long.
+        authorization_code_required: The %{scene} scene needs the customer's WeChat authorization code — the storefront must obtain it by redirecting to WeChat before asking for a payment session.
+        authorization_failed: WeChat refused the authorization code (%{message}). The code is single use and short lived, so the customer usually just needs to start over.
+        capture_method_unsupported: WeChat Pay charges at checkout and cannot hold an authorization for later capture. Set this store or payment method to capture at checkout.
+        credentials_rejected: WeChat Pay rejected these credentials — %{message}
+        h5_type_required: The H5 scene needs the customer's device type (Wap, iOS or Android) so WeChat can serve the right payment page.
+        invalid_private_key: The merchant certificate private key could not be read. Paste the full PEM block, including its BEGIN and END lines.
+        incomplete_credentials: These credentials cannot be used yet — %{problems}. Fill in every field WeChat Pay needs, or clear them all and save the method as a draft.
+        merchant_mode_unsupported: Only the direct merchant mode is supported today. Service provider (partner) mode is not available in this version yet.
+        no_scenes_enabled: No WeChat Pay payment scenes are enabled on this payment method. Enable at least one in its settings.
+        payer_client_ip_required: The H5 scene needs the customer's IP address, which WeChat requires on every H5 order.
+        payment_in_progress: This cart already has a WeChat Pay transaction that has been paid. Finish that payment rather than starting a second one.
+        refund_closed: WeChat closed this refund instead of returning the money. Nothing was refunded.
+        scene_identifier_required: The %{scene} scene needs its application identifier before it can be enabled.
+        scene_not_enabled: The %{scene} scene is not enabled on this WeChat Pay payment method.
+        scene_not_implemented: The %{scene} scene is enabled on this WeChat Pay payment method but is not available in this version yet.
+        scene_required: Choose which WeChat Pay scene to use — this payment method has more than one enabled.
+        session_already_paid: WeChat has already been paid for this session, so it cannot be canceled. The payment is recorded when WeChat reports it.
+        unavailable: WeChat Pay could not be reached to verify these credentials. Try again later.
+        zero_amount: A WeChat Pay session cannot be created for a zero amount.

@@ -1,0 +1,6 @@
+/spec/dummy
+/Gemfile.lock
+/log
+/tmp
+*.log
+.DS_Store
